@@ -1,0 +1,15 @@
+before_install:
+- sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended
+  texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng
+script:
+- mkdir _build
+- pdflatex -output-directory _build Statuts.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: pKE6zJhRK4ps2JemY3Tklky/3CQHcaJ7BiCU1pNZgtCnj339syMWIJa9Vb4MRMrPzmUQsKTVQMQ4Zv4LPs11IGBvz0atZ7h5hGi7E8TrT1YN0gaJuDXUs0pBxx7i9jorOdRpYA/36YgzjwNXyAYw52kRIaLVeptivCAbR6qsjXXHthMU6FDmLyKXpDwzqWe/mrtKwUeG9JPpwCu+8c82UfrUPx0DGcADon+Ocgt8D0N3A3H0jseE2efQM1SPgcXJGWpd2kM/RqPu41OF6ypRNEOUa1c+YwwGt01EYQaxHcqBsbLCwPYA0MALUBPqhO4KicDF96WY11H319AH2kF9yXPqyBf+MXyuOzRmxmiFeaEiAgMeF58XxoMiXFFeynXSQfMkVEEezlWEepYKo8AV2umtsIf8KL2SA5DCOGa2z0A509qWunmWVprupWYxbh8x+Q86lm6swI+29wYWXRx6iELWsaD787xMsE2KD+pWPbZNJa1Q1F/ubzDleVpEfE5qgvlyMU5IDehp57ILsBK1sSDidYyQAwDr0vnmmPSZGfowTKGk86tefjyUM2yyjAbemPQGWTtQUYOxmZfHcM6ghuT2zK1GpgUAAzhm73cAsdp5tO3/QKkkFmG2DCOqjlYdUCzq3CLGk/rmIQ7L8V+iAzaMvdIuCRLr2LmTxNiV3LY=
+  file: _build/Statuts.pdf
+  skip_cleanup: true
+  on:
+    repo: rezoleo/statuts
+    tags: true
