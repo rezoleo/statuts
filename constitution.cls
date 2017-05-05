@@ -35,7 +35,7 @@
 %{\normalfont\normalsize\bfseries}}%
 %\makeatother
 \titleformat{\section}[runin]{\normalfont\scshape}
-{Article \thesection.}{.5em}{}[\quad]
+{Article \thesection.}{.5em}{}[\newline]
 
 \renewcommand{\thesection}{\arabic{section}} 
 \renewcommand{\theenumi}{\alph{enumi}}
