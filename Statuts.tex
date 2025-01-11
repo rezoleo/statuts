@@ -1,160 +1,200 @@
-\documentclass[12pt]{constitution}
+\documentclass[12pt, a4paper]{article}
+
 \usepackage{mathpazo}
-\usepackage[francais]{babel}
+\usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{array, multirow, tabularx}
 \usepackage{graphicx}
 \usepackage{multicol}
+\usepackage{hyperref}
+
+\usepackage{chngcntr}
+\counterwithout{subsection}{section}
+
+\renewcommand{\thesection}{Section \arabic{section}}
+\renewcommand{\thesubsection}{Article \arabic{subsection}}
+
+\usepackage{geometry}
+\geometry{
+  left=1.5cm,
+  right=1.5cm,
+  top=2cm,
+  bottom=2cm
+}
+
+\usepackage{fontspec}
+\setmainfont{OpenSans}[Path=./fonts/, Extension=.ttf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic]
 
 \begin{document}
-	\title{Rézoléo - Statuts}
-	\author{Association déclarée par application de la loi du 1er juillet 1901 et du décret du 16 août 1901}
-	\date{11/01/2024}
+	\title{Statuts}
+	\author{Association Rézoléo}
+	\date{09/01/2025}
 	\maketitle
-	\newpage
 
-	\article{Présentation de l'association}
+    \begin{center}
+	   \textbf{Préambule}\\
+          Les présents statuts ont été adoptés par\\l'Assemblée Générale Ordinaire du 9 Janvier 2025
 
-	\section{Nom}
-Il est fondé entre les adhérents aux présents statuts une association régie par la loi du 1er juillet 1901 et le décret du 16 août 1901, ayant pour titre : Rézoléo (ci-après \og l'association\fg).
-
-	\section{Objet et moyens d'action}
-	L'association a pour missions :
-	\begin{itemize}
-		\item[\textbullet] la gestion, l'adaptation des réseaux de la résidence Léonard de Vinci située Avenue Paul Langevin à Villeneuve d'Ascq ;
-		\item[\textbullet]la promotion des projets et activités informatiques réalisés par ses membres auprès de Centrale Lille Institut et du grand public ;
-		\item[\textbullet] la fourniture d'un accès à internet dans le cadre réglementaire des articles L32 et suivants du Code des postes et communications électroniques ;
-		\item[\textbullet] la mise en place et le maintien de services et d'outils animant la vie associative de Centrale Lille Institut.
-	\end{itemize}
-
-	\section{Siège social}
-	Le siège social de l'association est situé à l'adresse :\\
-	\\
-	\noindent ÉCOLE CENTRALE DE LILLE\\
-	Avenue Paul Langevin\\
-	Cité Scientifique\\
-	59650 VILLENEUVE D'ASCQ.\\
-	\\
-	Il pourra être transféré par simple décision du Bureau.
-
-	\section{Durée}
-	La durée de l'association est illimitée.
-
-	\article{Composition de l'association}
-
-	\section{Adhérents connectés}
-	Tout résident de la Résidence Léonard de Vinci peut devenir membre connecté, et ainsi bénéficier de l'ensemble des services fournis par l'association. Il doit pour cela s'acquitter d'une cotisation dont le montant est défini dans le Règlement Intérieur, et signer un contrat. La qualité d'adhérent connecté se perd suite à un défaut de paiement ou selon les modalités prévues par l'Article 8. La durée d'adhésion est choisie par l'adhérent selon les offres proposées par l'association et peut être reconduite. L'adhérent connecté dispose d'une voix délibérative en Assemblée Générale.
-
-	\section{Adhérents non connectés}
-	Tout élève de l'École Centrale de Lille, de L'Institut Technologique Européen d'Entrepreneuriat et de Management (ITEEM) ou de l'École Nationale Supérieure de Chimie de Lille (ENSCL) peut devenir membre non connecté de l'association. Il peut bénéficier de l'ensemble des services de l'association à l'exception du droit d'accès à Internet. La qualité d'adhérent non connecté se perd par décision unanime du Bureau ou selon les modalités prévues par l'Article 8. La durée d'adhésion est de 1 an et 1 jour à compter de la date à laquelle elle est validée.
-	% Toute personne peut demander, les élèves le sont automatiquement, les autres sur décision du bureau (pour les anciens et autres cas à la con)
-	% question con : pourquoi un an et un jour ?
-
-	\section{Adhérents d'honneur}
-	Toute personne qui a été adhérente et dont l'adhésion a pris fin normalement peut se voir attribuer sur décision unanime du Bureau le statut d'adhérent d'honneur. Elle peut bénéficier des services de l'association à l'exception du droit d'accès à Internet et ne dispose que d'une voix consultative en Assemblée Générale.
-
-	\section{Radiation}
-	La qualité de membre se perd par :
-	\begin{enumerate}
-		\item[\textbullet] Le décès ;
-		\item[\textbullet] La démission adressée lors d'une Assemblée Générale ;
-		\item[\textbullet] L'exclusion motivée votée à la majorité lors d'une assemblé générale ;
-		\item[\textbullet] La perte des qualifications requises pour être adhérent ;
-		\item[\textbullet] Le non respect du Règlement Intérieur tel que défini à l'Article 9.
-	\end{enumerate}
-
-	\article{Direction de l'association}
-
-	\section{Règlement intérieur}
-	L'association Rézoléo se dote d'un Règlement Intérieur, définissant la cotisation, les modalités d'élections au sein de l'association et décrivant les engagements des adhérents envers l'association. Le non-respect du Règlement Intérieur pourra entraîner des sanctions allant jusqu'à l'exclusion définitive de l'association.
-	% «modalités d'élections au sein de l'association» ? y'a justement l'article 13 pour ça, et sinon pourquoi dans le RI ?
-
-	\section{Assemblée Générale}
-	L'Assemblée Générale est constituée de l'ensemble des adhérents à jour de cotisation, qui disposent chacun d'un droit de vote. L'Assemblée Générale est souveraine dans toutes ses décisions.
-
-	\section{Assemblée Générale Ordinaire}
-	L'Assemblée Générale se réunit en Assemblée Générale Ordinaire une fois par an. Les convocations et l'ordre du jour sont transmis par le Secrétaire à tous les membres de l'association au moins une semaine en avance. Tous les membres de l'Assemblée Générale disposent d'une voix. Les sujets de vote doivent explicitement être annoncés dans l'ordre du jour préparé par le Président de l'association, à partir des points qui lui auront étés proposés par les membres de l'association. En cas d'égalité de voix, celle du Président est prépondérante. Il est possible de voter par procuration (par lettre ou par mail signé selon un protocole sécurisé). Le quorum est fixé à 5\% des adhérents.
-
-	Lors de l'Assemblée Générale Ordinaire, le Président sortant présente un bilan moral des activités de l'association durant l'année écoulée. Le Trésorier sortant présente le bilan financier et les comptes de l'association. En cas de démission ou de motif légitime, tout membre désigné en réunion peut effectuer ces bilans. Ces bilans sont soumis à l'approbation de l'Assemblée.
-
-	\section{Assemblée Générale Extraordinaire}
-	Sur décision du Président ou à la suite d'une demande d'au moins 10\% des adhérents, l'Assemblée Générale est convoquée pour une Assemblée Générale Extraordinaire. L'Ordre du Jour est alors transmis au moins une semaine en avance à tous les membres de l'association. Chaque adhérent dispose d'un vote. En cas d'égalité, la voix du Président est prépondérante. Il est possible de voter par procuration (par lettre ou par mail signé selon un protocole sécurisé). Par défaut un quorum de 5\% est nécessaire pour la modification des statuts, pour la dissolution de l'association le quorum est fixé à 15\%. Dans le cas où le quorum ne serait pas atteint, une nouvelle Assemblée Générale peut être reconvoquée dans un délai minimal de quinze jours, sans condition de quorum.
-	% pourquoi pas de quorum par défaut (incohérent avec AGO) ?
-	% Beaucoup plus pour dissolution ? En supposant que la disolution ait lieu car l'asso n'a plus de membres, c'est facile de tous les avoir :-D
-
-	\section{Bureau}
-	Le Bureau est élu par les membres adhérents de l'association. Les membres souhaitant se présenter aux différents postes doivent émettre leur candidature une semaine à l'avance. Cette candidature peut être refusée par le Bureau en place. Le Bureau comporte obligatoirement un Président, un Secrétaire et un Trésorier. Si elles le jugent nécessaire, il pourra être choisi par chacune des parties prenantes du Bureau un adjoint parmi les autres membres adhérents afin de les aider dans leurs prérogatives. Il est possible de voter par procuration (par lettre ou par mail signé selon un protocole sécurisé). Les membres du Bureau peuvent se voir destitués de leurs fonctions s'ils s'absentent ou se voient dans l'incapacité d'exercer leurs fonctions pour une durée supérieure à 3 mois. Dans ce cas les membres adhérents organisent une nouvelle élection pour choisir un ou des remplaçants.\\
-
-	\begin{itemize}
-		\item[\textbullet] Président\\
-		 Le Président est le responsable moral de l'association. Il est à ce titre habilité à agir auprès des tiers au nom de l'association. Il est garant, avec le Trésorier, de la santé de l'association.\\
-		Le rôle du Président pourra être précisé, dans ses modalités, dans le Règlement Intérieur.
-		% utile ? - C'est juste pour se laisser une possibilité supplémentaire - « complété » / « élargi » plutôt ? - (c'est pas le but d'un RI)
-		\item[\textbullet] Trésorier\\
-		Le Trésorier est responsable de la gestion comptable et financière de l'association, notamment du fonctionnement de ses comptes bancaires ainsi que de la saisie comptable. Il assure le recouvrement des cotisations et des ressources de toute nature de l'association. Il effectue les paiements et perçoit les recettes avec l'accord du Président.\\
-		% Accord du président pour les recettes me semble superflu -> ça me rappelle d'autres statuts (mais ça me semble quand même bête…)
-		Le rôle du Trésorier pourra être précisé, dans ses modalités, dans le Règlement Intérieur.
-
-		\item[\textbullet] Secrétaire\\
-		Le Secrétaire est responsable de la bonne tenue des réunions, ainsi que de leur compte-rendu. Il est responsable de la gestion administrative de l'association. Il est également habilité sous réserve du droit des tiers à délivrer tous les documents officiels du Rézoléo.\\
-		Le rôle du Secrétaire pourra être précisé dans le Règlement Intérieur.\\
-
-		Aucun membre du Bureau ne peut être nommé à plus d'un poste à la fois. Le Bureau est renouvelé tous les ans selon les modalités de renouvellement précisées dans le Règlement Intérieur.
-	\end{itemize}
-
-	\article{Situations exceptionnelles}
-
-	\section{Modification des statuts}
-	Les présents statuts peuvent être modifiés sur proposition du Bureau et vote lors d'une Assemblée Générale Ordinaire.
-	Les procédures sont alors entreprises par le Secrétaire ou tout autre personne nommé en assemblé générale dans un délai d'un mois après la parution du Compte Rendu.
-
-	\section{Dissolution}
-	L'association peut être dissoute sur proposition du Bureau et vote lors d'une Assemblée Générale Extraordinaire.
-	Le Président ou toute autre personne nommée en Assemblé Générale est alors responsable du processus de dissolution tel que décrit par le cadre légal jusqu'à son aboutissement.
+        \vspace{3cm}
+        \includegraphics[scale=2]{rezoleo_logo.png}
+          
+    \end{center}
 
 	\newpage
 
-	Les présents statuts ont été adoptés ce jour par l'Assemblée Générale et seront déclarés, par le Président de l'association Rézoléo, dans un délai de trois mois.
-	\begin{flushright}
-		Fait à Villeneuve d'Ascq, le 11 janvier 2024 en deux exemplaires originaux.\\
-		Pour l'Assemblée Générale,
-	\end{flushright}
-	\noindent Le Président,\hfill  Le Secrétaire,\hfill  Le Trésorier, \\
+\section{Présentation de l’association}
+
+\subsection{Nom}
+
+Il est fondé entre les adhérents aux présents statuts une association à but non lucratif régie par la loi du 1er juillet 1901 et le décret du 16 août 1901 ayant pour titre "Rézoléo" (ci-après "l’association").
+
+\subsection{Objet}
+
+L’association a pour objet :
+
+\begin{enumerate}
+    \item la gestion, l’adaptation et le développement des réseaux de communication électronique de la résidence Léonard de Vinci située Avenue Paul Langevin à Villeneuve-d’Ascq (ci-après "la résidence") ;
+    \item la promotion et le financement de projets et activités informatiques réalisés ou non par ses membres auprès de Centrale Lille Institut et du grand public ;
+    \item la fourniture d’un accès à Internet dans le cadre réglementaire des articles L32 et suivants du Code des postes et communications électroniques dans les modalités définies par les présents statuts et par le règlement intérieur (\ref{article:ri}) ;
+    \item la mise en place et le maintien de services et d’outils informatiques et numériques animant la vie associative de Centrale Lille Institut ;
+    \item la formation et la diffusion des savoirs dans le domaine du numérique ;
+    \item l’aide à la réparation et la fourniture de matériel informatique à ses membres.
+\end{enumerate}
+
+\subsection{Siège social}
+
+Le siège social de l’association est situé à l’adresse :
+
+\vspace{.5cm}\\
+\fbox{
+\begin{minipage}{0.6\textwidth} \centering
+    ÉCOLE CENTRALE DE LILLE\\
+    Avenue Paul Langevin – Cité Scientifique\\
+    59650 VILLENEUVE D’ASCQ
+\end{minipage}
+}
+\vspace{.5cm}\\
+Il pourra être transféré par décision du conseil d’administration validée lors de l’assemblée générale suivante.
+
+\subsection{Durée}
+
+La durée de l’association est illimitée.
+
+\subsection{Ressources}
+
+Les ressources de l’association sont constituées :
+
+\begin{enumerate}
+    \item des cotisations versées par ses membres ;
+    \item des subventions qui pourraient lui être accordées par toute institution publique ;
+    \item des dons, donations et legs effectués par toute personne morale ou physique ;
+    \item du produit des ventes habituelles et des rétributions perçues pour service rendu ;
+    \item des intérêts perçus de ses placements ;
+    \item de façon générale, toutes autres ressources autorisées par les textes législatifs, réglementaires et conventionnels en vigueur.
+\end{enumerate}
+
+\section{Composition de l’association}
+
+\subsection{Adhérent Non Connecté (ANC)}
+
+\begin{enumerate}
+    \item Tout élève de l’École Centrale de Lille, de L’Institut Technologique Européen d’Entrepreneuriat et de Management (ITEEM) ou de l’École Nationale Supérieure de Chimie de Lille (ENSCL) peut devenir s’il en exprime la demande adhérent non connecté de l’association. Il peut ainsi bénéficier de l’ensemble des services de l’association à l’exception du droit d’accès à Internet. La qualité d’adhérent non connecté se perd selon les modalités prévues par l’\ref{article:perte}.
+    \item La durée d’adhésion est de 1 an et 1 jour à compter de la date à laquelle elle est validée. L’adhésion peut être reconduite tant que l’adhérent répond aux critères requis pour être adhérent non connecté, et qu’il n’a pas perdu sa qualité d’adhérent non connecté selon les modalités prévues par l’\ref{article:perte}.
+    \item L’adhérent non connecté ne dispose pas de voix en Assemblée Générale.
+\end{enumerate}
+
+\subsection{Adhérent Connecté (AC)}
+
+\begin{enumerate}
+    \item Tout habitant de la résidence peut devenir adhérent connecté, et ainsi bénéficier de l’ensemble des services fournis par l’association. Il doit pour cela s’acquitter d’une cotisation dont le montant est défini dans le règlement intérieur (\ref{article:ri}), et signer un bulletin d’adhésion lui rappelant ses engagements vis-à-vis de l’utilisation des services qui lui sont fournis. La qualité d’adhérent connecté se perd suite à un défaut de paiement de cotisation ou selon les modalités prévues par l’\ref{article:perte}.
+    \item La durée d’adhésion est choisie par l’adhérent parmi celles proposées par l’association dans le règlement intérieur (\ref{article:ri}) et peut être reconduite tant que l’adhérent répond aux critères requis pour être adhérent connecté, et qu’il n’a pas perdu sa qualité d’adhérent connecté selon les modalités prévues par l’\ref{article:perte}.
+    \item L’adhérent connecté dispose d’une voix délibérative en Assemblée Générale.
+\end{enumerate}
+
+\subsection{Membre d’honneur}
+
+\begin{enumerate}
+    \item Toute personne qui a été adhérent non connecté ou adhérent connecté et dont l’adhésion a pris fin normalement peut se voir attribuer par le conseil d’administration le statut de membre d’honneur pour une durée définie par celui-ci, éventuellement renouvelable. Elle peut bénéficier des services prévus pour les adhérents non connectés.
+    \item Le conseil d’administration peut décider de fournir gratuitement un accès à internet au membre d’honneur.
+    \item Le membre d’honneur ne dispose que d’une voix consultative en Assemblée Générale.
+\end{enumerate}
+
+\subsection{Membre associatif}
+\begin{enumerate}
+    \item Toute association occupant des locaux à la résidence peut prétendre au statut de membre associatif. Les membres associatifs sont représentés auprès de Rézoléo par une personne physique. Les membres associatifs peuvent prétendre aux mêmes droits que les adhérents connectés, avec les mêmes conditions de cotisation.
+    \item Le conseil d’administration peut exonérer le membre associatif de cotisation.
+    \item Le membre associatif ne dispose que d’une voix consultative en Assemblée Générale.
+\end{enumerate}
+
+\subsection{Perte de la qualité de membre} \label{article:perte}
+
+La qualité de membre (quelle que soit la catégorie) se perd par :
+
+\begin{enumerate}
+    \item le décès (ou la dissolution pour les personnes morales) ;
+    \item la démission adressée par courrier ou courriel ;
+    \item le non-paiement de la cotisation après un rappel ;
+    \item l’exclusion votée par le conseil d’administration, notamment par non-respect du RI ;
+    \item la perte des qualifications requises pour être adhérent de cette catégorie.
+\end{enumerate}
+
+L’exclusion votée par le conseil d’administration doit être motivée à l'écrit et est susceptible d’un recours auprès du conseil d’administration, l’adhérent ayant été invité à se défendre devant celui-ci.
+
+\section{Organes de direction}
+
+\subsection{Règlement Intérieur} \label{article:ri}
+
+L’association se dote d’un règlement intérieur, définissant notamment les règles de cotisation, les modalités d’élections au sein de l’association et décrivant les engagements des adhérents envers l’association. Le non-respect du règlement intérieur pourra entraîner des sanctions allant jusqu’à l’exclusion prévue à l’\ref{article:perte}. Le règlement intérieur précise aussi les modalités d’application des directives et règles énoncées dans les présents statuts.
+
+\subsection{Assemblée Générale} \label{article:ag}
+
+\begin{enumerate}
+    \item L’Assemblée Générale est constituée de l’ensemble des adhérents connectés à jour de cotisation, la liste des votants étant arrêtée 7 jours avant l’Assemblée Générale. L’Assemblée Générale est souveraine dans toutes ses décisions, qu’elle prend sauf contre-indication à la majorité simple des votants.
+    \item L’Assemblée Générale se réunit en Assemblée Générale Ordinaire une fois par an. Les convocations et l’ordre du jour sont transmis par le secrétaire à tous les adhérents connectés au moins 7 jours à l’avance. Les points de vote doivent être annoncés dans l’ordre du jour préparé à partir des points qui auront été proposés par les membres de l’association. Il est possible de voter par procuration (par lettre ou par mail signé avec un protocole sécurisé). Le quorum est fixé à 5\% des adhérents connectés, sauf pour les décisions prévues à l'\ref{article:statuts} et à l'\ref{article:dissolution}. Lors de l’Assemblée Générale Ordinaire, les bilans moraux et financiers sont présentés par le bureau, ce dernier bilan étant soumis à l’approbation de l’Assemblée Générale. Si celle-ci n’est pas obtenue, une nouvelle Assemblée Générale est convoquée au maximum 15 jours plus tard. L’ordre du jour comprend également le renouvellement complet du conseil d’administration.
+    \item L’Assemblée Générale Extraordinaire peut être convoquée par i) le président ; ii) décision du conseil d’administration ; iii) un cinquième des adhérents connectés. Les conditions de convocation et de procuration sont les mêmes que celles définies pour l’Assemblée Générale Ordinaire. Il n’y a pas de quorum, sauf pour les décisions prévues à l'\ref{article:statuts} et à l'\ref{article:dissolution}.
+\end{enumerate}
+
+\subsection{Conseil d’Administration} \label{article:ca}
+
+\begin{enumerate}
+    \item Le Conseil d’Administration (CA) est composé d’au moins trois membres élus par l’Assemblée Générale parmi les adhérents connectés, les adhérents non connectés ou les membres d’honneur. Le mandat des administrateurs est d’un an, renouvelable.
+    \item Le CA place sa confiance dans le bureau pour la gestion courante de l’association, la représentation de l’association auprès des tiers, la mise en œuvre et le suivi des projets de l’association, ainsi que le maintien des infrastructures de l’association.  Il veille ainsi à la pérennité de l’association, et la mise en œuvre des orientations générales de l’association décidées en Assemblée Générale ou en réunion du CA. Le CA assiste le bureau dans ces tâches.
+    \item Le CA est présidé par le président de l’association, ou, à défaut, par un administrateur désigné. Les réunions du CA sont convoquées par son président ou sur demande d’au moins un tiers de ses membres. Les décisions sont prises à la majorité simple des votants, sauf disposition contraire des présents statuts, par exemple celles des autres points de cet article. Les délibérations du CA font l’objet d’un compte-rendu, consigné par le secrétaire ou, à défaut, par un administrateur désigné.
+    \item La destitution d’un membre du Bureau ne peut être validée que via une majorité qualifiée des deux tiers des membres du CA présents ou représentés, lors d’une réunion réunissant un quorum de 50\% du CA.  L’ancien membre du bureau reste néanmoins administrateur.
+    \item Les administrateurs ont des accès privilégiés à l’infrastructure et aux données de l’association, leur permettant de réaliser leurs tâches. Ces accès peuvent être précisés dans le règlement intérieur.
+    \item La démission d’un administrateur s’effectue par courrier ou courriel adressé au conseil d’administration. Si le présent article n’est plus respecté, une Assemblée Générale Extraordinaire est convoquée pour élire un nouveau CA.
+\end{enumerate}
+
+\subsection{Bureau}
+
+\begin{enumerate}
+    \item Le Bureau est composé de trois membres distincts :\vspace{.5cm}\\
+le \textbf{Président}, responsable moral de l’association, représente l’association dans tous les actes de la vie civile, préside les réunions du Bureau et les Assemblées Générales, et garantit l'exécution des décisions votées, il est co-responsable financier de l’association. Le rôle du Président pourra être précisé, dans ses modalités, dans le règlement intérieur ;\vspace{.5cm}\\
+le \textbf{Trésorier}, co-responsable financier, chargé de la gestion financière, ordonne les dépenses, et rend compte de sa gestion lors de l’assemblée générale ordinaire. Il assure le recouvrement des cotisations et des ressources de toute nature de l’association. Il effectue les paiements et perçoit les recettes avec l’accord du Président. Le rôle du Trésorier pourra être précisé, dans ses modalités, dans le règlement intérieur ;\vspace{.5cm}\\
+le \textbf{Secrétaire}, chargé de la gestion administrative, de la préparation des ordres du jour et convocations, ainsi que de la rédaction et de la conservation des comptes-rendus. Le rôle du Secrétaire pourra être précisé dans le règlement intérieur.
+    \item Les membres du Bureau sont élus par le CA parmi ses membres pour un mandat d’un an.
+    \item Le Bureau est autonome dans la gestion quotidienne de l’association. Il peut prendre toutes les décisions nécessaires à la bonne marche de l’association dans le respect de l’\ref{article:ca}.
+    \item Le Bureau informe le CA des décisions majeures prises en dehors des réunions du CA, notamment celles ayant un impact financier ou organisationnel significatif.
+    \item Le bureau peut décider s’il le souhaite d’accorder à tout administrateur une délégation d’une durée qu’il définit et d’une portée comprenant la gestion courante de l’association, la représentation de l’association auprès des tiers, la mise en œuvre et le suivi des projets de l’association, ainsi que le maintien des infrastructures de l’association. Il peut la révoquer à tout instant. Les délégations s’éteignent lors du renouvellement du bureau.
+    \item La démission d’un membre du bureau s’effectue par courrier ou courriel adressé au conseil d’administration. Un membre du bureau démissionnaire peut rester au CA.
+\end{enumerate}
+
+\section{Situations Exceptionnelles}
+
+\subsection{Modification des statuts} \label{article:statuts}
+
+Les statuts de l’association ne peuvent être modifiés que par l’Assemblée Générale. Le quorum pour valider une modification des statuts est fixé à 5\% des adhérents connectés. Les décisions sont prises à la majorité. Les procédures de mise à jour des statuts sont alors entreprises par le bureau dans un délai d’un mois après la tenue de l’Assemblée Générale.
+
+\subsection{Dissolution} \label{article:dissolution}
+
+\begin{enumerate}
+    \item La dissolution de l’association ne peut être prononcée que par une Assemblée Générale Extraordinaire (\ref{article:ag}) convoquée à cet effet. La proposition de dissolution doit être formulée par les deux tiers des membres du CA.
+    \item Le quorum pour la tenue de l’AGE de dissolution est fixé à un quart des adhérents connectés. La décision est prise à la majorité qualifiée des deux tiers des votants.
+    \item En cas de dissolution, l’AGE désigne un ou plusieurs liquidateurs chargés de la liquidation des biens de l’association. L’actif net, s’il y en a, est dévolu conformément à la loi en vigueur et à l’objet de l’association.
+\end{enumerate}
+
 \end{document}
-
-\begin{comment}
-
-Article 42 : Déclaration des modifications
-Pour que les changements de bureau et de status soient effectifs, il faut les déclarer … retrouver l'article de la loi de 1901 qui le dit mieux que moi ? (si la loi le dit, pourquoi le réécrire ?) là tu marques un point -> pour ne pas que les jeunes oublient ;-D (mais sinon, je suis d'accord sur le principe que de ne pas mettre un article de loi dans un document ne suffit pas pour qu'il ne s'applique pas)
-source : http://www.assistant-juridique.fr/comment_modifier_statuts_association.jsp
-Les modifications doivent être déclarées en préfecture ou sous-préfecture (peut-être préciser laquelle ?) dans un délai de 3 mois après modification. (peut-être préciser : c'est le rôle du secrétaire de s'en occuper)
-
-Remarques de CoquatriX :
-- Vous incluez beaucoup de chiffres alors que le RI devrait se charger de définir les précisions des modalités
-- L'objet est à la fois trop vague et trop précis, et comporte certains points qui semblent difficle à mettre en oeuvre et/ou à justifier
-- Les modalités de la moindre décision ou élections paraissent alambiqués
-- Le statut de membre d'honneur me parait carrément superflu, surtout sans droit de vote, et la notion d'élève est mal définie.
-- Le problème avait été résolu en première version par l'existence d'un Conseil d'administration , l'"Equipe Rézoléo", qui résolvait nombre de questions et particularités du système envsagé tout en prévoyant une protection contre les éventuelles failles systémique.
-- Vous définissez trop souvent par inclusion et non par exclusion.
-- Vous avez voulu dire beaucoup de choses dans un document pour lequel il faut faire court et simple. les tatuts ne sont pas un document à brandir à la moindre question/conflit, c'est un contrat entre plusieurs personnes sur un objet et des rôles, ou plus simplement des droits et obligations.
-
-Autres remarques :
-
-règlement intérieur
-
-*la cotisation est de xxx
-
-*les procurations sont données sur papier livre (signé ?) ou par courrier électronique signé en PGP (par une clef qui vient d'être générée ? déjà connue du screz ?) au moins 24 heures à l'avance au secrétaire (ou au CA en entier ? quid du screz adjoint ?) tu as raison, il vaut mieux préciser
-
-*en cas de non-respect des règles, les sanctions sont
-
-*il est interdit de
-
-*les membres ayant un accès élevé aux machines de l'association sont nommés et révoqués par le bureau.
-Il sont responsables/pas responsables de ce qu'ils en font (rayez la mention inutile)
-
-*les compte-rendus seront publiés aux membres par envoi sur une ml/publication sur papier affiché à xxx /mis en ligne sur un site internet rezoleo.fr /  au(x) format(s) (parmi ceux-ci) pdf/odt/word/txt
-
-*les textes normatifs tels que statuts et règlement intérieur doivent être librement accessibles sur le site internet de l'asso et/ou affichage papier, etc.
-\end{comment}
